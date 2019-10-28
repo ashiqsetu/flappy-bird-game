@@ -71,7 +71,7 @@ function draw() {
 		if(birdXPosition + birdImage.width >= pipe[i].x && birdXPosition <= pipe[i].x + pipeNorthImage.width &&
 			(birdYPosition <= pipe[i].y + pipeNorthImage.height || birdYPosition +  birdImage.height >= pipe[i].y + constant)
 			|| birdYPosition +  birdImage.height >= cvs.height - fgImage.height){
-				dead.play();
+				deadSound.play();
 				location.reload();
 			}
 
